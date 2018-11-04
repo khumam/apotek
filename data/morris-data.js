@@ -3,37 +3,37 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
+            period: 'Senin',
             iphone: 2666,
             ipad: null,
             itouch: 2647
         }, {
-            period: '2010 Q2',
+            period: 'Senin',
             iphone: 2778,
             ipad: 2294,
             itouch: 2441
         }, {
-            period: '2010 Q3',
+            period: 'Senin',
             iphone: 4912,
             ipad: 1969,
             itouch: 2501
         }, {
-            period: '2010 Q4',
+            period: 'Senin',
             iphone: 3767,
             ipad: 3597,
             itouch: 5689
         }, {
-            period: '2011 Q1',
+            period: 'Senin',
             iphone: 6810,
             ipad: 1914,
             itouch: 2293
         }, {
-            period: '2011 Q2',
+            period: 'Senin',
             iphone: 5670,
             ipad: 4293,
             itouch: 1881
         }, {
-            period: '2011 Q3',
+            period: 'Senin',
             iphone: 4820,
             ipad: 3795,
             itouch: 1588
@@ -57,6 +57,45 @@ $(function() {
         ykeys: ['iphone', 'ipad', 'itouch'],
         labels: ['iPhone', 'iPad', 'iPod Touch'],
         pointSize: 2,
+        hideHover: 'auto',
+        resize: true
+    });
+
+    new Morris.Area({
+        element: 'morris-penjualan',
+        data: [{
+            period: 'Senin Q1',
+            Penjualan: 2666,
+            Pengeluaran: 2111
+        }, {
+            period: 'Selasa Q2',
+            Penjualan: 2778,
+            Pengeluaran: 1213
+        }, {
+            period: 'Rabu Q3',
+            Penjualan: 4912,
+            Pengeluaran: 1003
+        }, {
+            period: 'Kamis Q4',
+            Penjualan: 3767,
+            Pengeluaran: 2311
+        }, {
+            period: 'Jumat Q5',
+            Penjualan: 6810,
+            Pengeluaran: 4312
+        }, {
+            period: 'Sabtu Q6',
+            Penjualan: 5670,
+            Pengeluaran: 3244
+        }, {
+            period: 'Minggu Q7',
+            Penjualan: 4820,
+            Pengeluaran: 2211
+        }],
+        xkey: 'period',
+        ykeys: ['Penjualan','Pengeluaran'],
+        labels: ['penjualan','Pengeluaran'],
+        pointSize: 1,
         hideHover: 'auto',
         resize: true
     });
