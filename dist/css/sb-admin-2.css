@@ -87,10 +87,10 @@ body {
   padding: 15px;
 }
 .sidebar ul li {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #ffffff;
 }
 .sidebar ul li a.active {
-  background-color: #eeeeee;
+  background-color: #555555;
 }
 .sidebar .arrow {
   float: right;
